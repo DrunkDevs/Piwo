@@ -9,7 +9,7 @@ packages
 # iOS
 ios/.generated/
 ios/Flutter/Generated.xcconfig
-ios/Runner/GeneratedPluginRegistrant.*
+GeneratedPluginRegistrant.*
 
 # Android
 android/local.properties
