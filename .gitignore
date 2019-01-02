@@ -1,0 +1,18 @@
+.DS_Store
+.dart_tool/
+build/
+packages
+.packages
+.pub/
+.buildlog
+
+ios/.generated/
+ios/Flutter/Generated.xcconfig
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Include when developing application packages.
+pubspec.lock
+
+# Intellij
+*.iml
+.idea
