@@ -1,5 +1,5 @@
-name: Piwo
-description: A new Flutter package.
+name: piwo
+description: Library that generates interface from you HTTP API.
 version: 0.0.1
 author: DrunkDevs
 homepage:
