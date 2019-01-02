@@ -2,7 +2,4 @@ language: dart
 dart:
   - dev
 
-dart_task:
-  - test
-  - dartfmt
-  - dartanalyze
+script: bash script/travis.sh
