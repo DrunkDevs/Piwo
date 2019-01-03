@@ -1,0 +1,10 @@
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+builders:
+
+  property_get:
+    import: "package:piwo/builder.dart"
+    builder_factories: ["getBuilder"]
+    build_extensions: {".dart": ["get.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
