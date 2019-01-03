@@ -1,14 +1,45 @@
 # piwo
 
-A new Flutter package.
+ Library that generates interface from you HTTP API.
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+Add `build.yaml` to your project with below code:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```yml
+targets:
+  $default:
+    builders:
+      piwo:
+        generate_for:
+          - lib/*.dart
+```
+
+Sample API definition `api.dart` file looks like this:
+
+```dart
+import 'package:piwo/annotations/get.dart';
+import 'package:http/http.dart' as http;
+
+part 'api.g.dart';
+
+@Get("http://google.pl/fakeData")
+String FakeData() {}
+```
+
+## License
+```
+Copyright 2019 DrunkDevs
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
