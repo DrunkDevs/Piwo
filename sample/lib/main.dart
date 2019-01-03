@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:piwo/piwo.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  "Sample data here ${Calculator().addOne(1)}",
+                  "Sample data here",
                 )
               ],
             ))));
